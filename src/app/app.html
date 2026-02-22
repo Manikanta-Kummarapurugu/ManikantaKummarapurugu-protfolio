@@ -1,0 +1,211 @@
+<nav class="navbar">
+  <div class="logo">Manikanta Kummarapurugu</div>
+  <button class="menu-btn" (click)="toggleMobileMenu()">&#9776;</button>
+  <div class="nav-links" [class.open]="mobileMenuOpen">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+<div style="background-color:#111826;margin-top:2px">
+  <section id="about" class="about-section">
+    <h2 class="section-title" style="color: white;">👨‍💻 About Me</h2>
+    <p class="about-text">
+      I'm a passionate Web and Mobile Application Developer with 2.11 years of
+      experience building scalable and user-friendly applications. I specialize in
+      Angular, PrimeNG, PrimeReact, React Native, PHP REST APIs, and MySQL.
+
+      I enjoy continuously learning modern technologies to deliver high-quality products.
+    </p>
+    <div class="education-card">
+      <div class="edu-header">
+        <i class="pi pi-graduation-cap"></i>
+        <h3>Education</h3>
+      </div>
+
+      <div class="edu-body">
+        <h4>B.Tech — Mechanical Engineering</h4>
+        <p class="edu-college">BVC Engineeing College</p>
+        <span class="edu-year">2018</span>
+      </div>
+    </div>
+
+    <p-card class="hero-card">
+      <ng-template pTemplate="header">
+        🚀 Availabe for work
+      </ng-template>
+      Angular . React . React Native . PHP . MySQL . TypeScript
+    </p-card>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title" style="color: white;">🛠️ Technical Skills</h2>
+    <div class="skills">
+      <p-card class="skills-card">Angular</p-card>
+      <p-card class="skills-card">PrimeNG</p-card>
+      <p-card class="skills-card">PrimeReact</p-card>
+      <p-card class="skills-card">React Native</p-card>
+      <p-card class="skills-card">PHP Rest APIs</p-card>
+      <p-card class="skills-card">MySQL</p-card>
+      <p-card class="skills-card">TypeScript</p-card>
+      <p-card class="skills-card">Postman</p-card>
+      <p-card class="skills-card">N8N</p-card>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title" style="color: white;">📂 Projects</h2>
+    <div class="projects">
+      <p-card class="project-card krime-card">
+        <ng-template pTemplate="header">
+          <div class="project-header">
+            🚨 <strong>KrimeScene — Mobile Crime Awareness App</strong>
+          </div>
+        </ng-template>
+        <p class="project-desc">
+          KrimeScene is a community-driven mobile application that enables users to
+          report incidents, receive real-time crime alerts, and improve neighborhood safety.
+          I independently developed the complete cross-platform application using React Native.
+        </p>
+        <ul class="project-features">
+          <li>📱 Cross-platform app (Android & iOS)</li>
+          <li>📍 Real-time crime reporting</li>
+          <li>🔔 Push notifications</li>
+          <li>⚡ Optimized user experience</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://play.google.com/store/apps/details?id=acs.com.KrimeScene&pcampaignid=web_share"
+            target="_blank" class="project-btn">
+            🤖 Android
+          </a>
+
+          <a href="https://apps.apple.com/us/app/krimescene/id6737813493" target="_blank" class="project-btn ios">
+            🍎 iOS
+          </a>
+        </div>
+      </p-card>
+      <p-card class="project-card">
+        <ng-template pTemplate="header">
+          <div class="project-header">
+            💰 <strong>DailyRoll — Expense Management App</strong>
+          </div>
+        </ng-template>
+        <p class="project-desc">
+          DailyRoll is a personal expense tracking application that helps users manage
+          daily budgets, monitor spending, and track incoming and outgoing payments.
+          I also converted the DailyRoll web platform from Angular to PrimeReact.
+        </p>
+        <div class="project-links">
+          <a href="https://play.google.com/store/apps/details?id=acs.com.dailyroll&pcampaignid=web_share"
+            target="_blank" class="project-btn">
+            🤖 Android
+          </a>
+          <a href="https://apps.apple.com/us/app/daily-roll/id1437712015" target="_blank" class="project-btn ios">
+            🍎 iOS
+          </a>
+        </div>
+      </p-card>
+      <p-card class="project-card">
+
+        <ng-template pTemplate="header">
+          <div class="project-header">
+            📸 <strong>EliteCap — Proof Capture App</strong>
+          </div>
+        </ng-template>
+
+        <p class="project-desc">
+          EliteCap enables users to capture real-time photo and video proof of events
+          and incidents. The app ensures reliable evidence collection so users can
+          easily document and reconstruct their story when needed.
+        </p>
+
+        <div class="project-links">
+          <a href="https://play.google.com/store/apps/details?id=acs.com.elitecap&pcampaignid=web_share" target="_blank"
+            class="project-btn">
+            🤖 Android
+          </a>
+
+          <a href="https://apps.apple.com/us/app/elitecap/id1406820737" target="_blank" class="project-btn ios">
+            🍎 iOS
+          </a>
+        </div>
+
+      </p-card>
+      <p-card class="project-card">
+
+        <ng-template pTemplate="header">
+          <div class="project-header">
+            🌐 <strong>DailyRoll Web — PrimeReact Migration</strong>
+          </div>
+        </ng-template>
+
+        <p class="project-desc">
+          Migrated the DailyRoll web platform from Angular to PrimeReact,
+          improving performance, modernizing the UI, and enhancing
+          maintainability. The application helps users manage daily expenses
+          and financial tracking through a responsive web interface.
+        </p>
+
+        <div class="project-links">
+          <span class="project-tag">⚛️ PrimeReact</span>
+          <span class="project-tag">🅰️ Angular (Legacy)</span>
+          <span class="project-tag">📱 Responsive Web</span>
+        </div>
+
+      </p-card>
+
+      <p-card class="project-card">
+
+        <ng-template pTemplate="header">
+          <div class="project-header">
+            🌐 KrimeWatch
+          </div>
+        </ng-template>
+
+        <p class="project-desc">
+          PrimeReact-based web application that helps communities report and
+          monitor crime incidents in real time, improving public awareness
+          and safety worldwide.
+        </p>
+
+        <ng-template pTemplate="footer">
+          <div class="project-links">
+            <a href="https://krimewatch.com" target="_blank" class="project-link">
+              🔗 KrimeWatch
+            </a>
+          </div>
+        </ng-template>
+
+      </p-card>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title" style="color: white;">📬 Contact Me</h2>
+    <div class="contact-row">
+      <a href="mailto:manikantakummarapurugu@gmail.com" class="contact-chip">
+        <i class="pi pi-envelope"></i>
+        <span>manikantakummarapurugu@gmail.com</span>
+      </a>
+
+      <a href="tel:+917032797119" class="contact-chip">
+        <i class="pi pi-phone"></i>
+        <span>+91 7032797119</span>
+      </a>
+      <a href="https://www.linkedin.com/in/manikanta-kummarapurugu-190aa1101/" target="_blank" class="contact-chip">
+        <i class="pi pi-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/Manikanta-Kummarapurugu" target="_blank" class="contact-chip">
+        <i class="pi pi-github"></i>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </section>
+
+</div>
+<footer>
+  <p>&copy; 2026 Manikanta. All rights reserved.</p>
+</footer>
